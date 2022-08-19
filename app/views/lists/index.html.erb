@@ -1,0 +1,10 @@
+<h1>lists</h1>
+<div class="container w-100">
+  <ol class="list-group">
+    <% @lists.each do |list| %>
+      <li><%= link_to List.name, list_path(list) %></li>
+    <% end %>
+  </ol>
+</div>
+
+<%= link_to "Add new list", new_list_path %>
