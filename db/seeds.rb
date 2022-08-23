@@ -8,5 +8,5 @@ require "faker"
 Movie.destroy_all
 
 10.times do
-  Movie.create(title: Faker::Movie.title, overview: Faker::Movie.quote, poster_url:"https//source.unsplash.com/random", rating: rand(0..5))
+  Movie.create(title: Faker::Movie.title, overview: Faker::Movie.quote, poster_url: Faker::LoremFlickr.image, rating: rand(0..5))
 end
